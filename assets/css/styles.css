@@ -1,4 +1,3 @@
-
 /* Webfonts and Icon fonts
  ------------------------------------------------------------------ */
  @import url("font-awesome/css/font-awesome.min.css");
@@ -615,3 +614,73 @@ input {
     line-height: 1.2;
 }
     
+/* responsive design
+--------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+    .resume-about {
+        min-width: 700px;
+        padding-left: 3%;
+    }
+    .resume-wrapper-inner {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 992px) {
+    .resume-about {
+        min-width: 524px;
+        padding-left: 2%;
+    }
+    .resume-wrapper-inner {
+        max-width: 98%;
+    }
+    .skills, .certificates, .contact {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .work-projects, .education, .experience {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .resume-about {
+        min-width: 500px;
+        padding-left: 1%;
+    }
+    .resume-wrapper-inner {
+        max-width: 100%;
+    }
+    .skills, .certificates, .contact {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .work-projects, .education, .experience {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .resume-about {
+        min-width: auto;
+        padding-left: 1%;
+    }
+    .resume-wrapper-inner {
+        max-width: 100%;
+    }
+    .resume-photo {
+        width: 100px;
+        height: 135px;
+    }
+    .skills, .certificates, .contact {
+        width: 100%;
+        margin: 15px 0;
+    }
+    .work-projects, .education, .experience {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+	
