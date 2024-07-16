@@ -1,0 +1,617 @@
+
+/* Webfonts and Icon fonts
+ ------------------------------------------------------------------ */
+ @import url("font-awesome/css/font-awesome.min.css");
+ 
+:root {
+	--color-blue-dark-1: #00387f;
+	--color-tiffany: #00a6a6;
+	--profile-theme: #4682bf;
+	--timeline-circle-theme: #14253e;	
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {    
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.5;
+}
+
+
+header {
+    height: 245px !important;
+}
+
+.resume-photo {
+    border: 0;
+    width: 180px;
+    height: 245px
+}
+
+.resume-about {   
+    min-width: 1000px;
+    padding-left: 7%;       
+}
+
+.resume-wrapper {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.resume-wrapper-inner {
+    max-width: 90%;
+    height: 245px;
+}
+
+.resume-header {
+    background: #434E5E;
+    color: rgba(255, 255, 255, 0.9);    
+    height: 245px;
+}
+
+.resume-header a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.resume-header .name {
+    font-size: 1.75rem;
+    letter-spacing: 0.175rem;
+    font-weight: 900;
+    margin-top: 0 !important;
+}
+
+.resume-header .title {
+    font-size: 1.5rem;
+}
+
+.resume-social-img {
+    height: 20px;
+    width: 25px;
+}
+
+.resume-social .fa-container {
+    font-size: 1rem;
+    display: inline-block;
+    width: 24px;
+    border-radius: 0.125rem;
+    color: #c9e7f5;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1.8em;
+    overflow: visible;
+    vertical-align: -.525em;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: 24px;
+    height: 27px;
+}
+
+header .resume-social li a { color: #fff; }
+header .resume-social li a:hover { color: #11ABB0; }
+
+header .resume-social li a .fa-container:hover { color: #11ABB0; }
+
+.ml-md-auto, .mx-md-auto {
+    margin-left: 2% !important;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+}
+
+.media-body {
+    flex: 1;
+    padding: 1.5rem !important;
+    display: flex !important;
+}
+
+.ml-auto,
+.mx-auto {
+    margin-left: auto !important;
+}
+
+.mr-auto,
+.mx-auto {
+    margin-right: auto !important;
+}
+
+.mr-2,
+.mx-2 {
+    margin-right: 0.5rem !important;
+}
+
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+.pt-5 {
+    padding-top: 5%;
+}
+
+ol, ul, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+h1, .h1 {
+    margin-bottom: 0.5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* navigation menu
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#nav-wrap {
+    font: 12px 'opensans-bold', sans-serif;
+    width: 99%;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    left: 5;
+    top: 0;
+}
+
+ul#nav {
+    min-height: 48px;
+    max-width: 90.9%;
+    background: black;
+    text-align: center;
+}
+
+ul#nav li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+}
+ 
+/* Links */
+ul#nav li a {   
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;    
+}
+
+ul#nav li a:active { 
+    background-color: transparent !important;
+} 
+
+ul#nav li.current a {
+    color: #F06000;
+}
+
+
+ul#nav li a:hover { color: #11ABB0; }
+
+
+.sections-generic {
+    box-shadow: 3px 3px gray, -1em 0 .4em gray;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+
+/* projects section
+--------------------------------------------------------------------- */
+.work-projects {
+    float: left;    
+    height: 820px;
+    width: 50%;
+    margin: 15px 15px 15px 95px;
+}
+
+.project-div {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.project-img {
+    width: 20%;
+    height: auto;
+}
+
+.project-img:hover{
+    color: #424242; 
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(6.15);
+  -ms-transform: scale(6.15); /* IE */
+  -webkit-transform: scale(6.15); /* Safari and Chrome */
+}
+
+/* skills section
+--------------------------------------------------------------------- */
+.skills {
+    float: right;    
+    height: 820px;
+    width: 36%;
+    margin: 15px 100px 15px 15px;
+}
+
+/* education section
+--------------------------------------------------------------------- */
+.education {
+    float: left;    
+    height: 800px;
+    width: 50%;
+    margin: 15px 15px 15px 95px;
+}
+
+/* certificates section
+--------------------------------------------------------------------- */
+.certificates {
+    float: right;    
+    height: 800px;
+    width: 36%;
+    margin: 15px 100px 15px 15px;
+}
+
+.certificate-img {
+    max-width: 40px;
+    height: auto;
+}
+
+/* box for all sections 
+--------------------------------------------------------------------- */
+.box-img {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.work-img {
+    float: left;
+    background-color: #b30000;
+    height: auto;
+    width: 50px;
+    margin: 25px 30px 100% 30px;
+    box-sizing: border-box;
+}
+
+.project-box {
+    float: left;
+    border: solid;
+    border-width: 0px 0px 3px 0px;
+    box-sizing: border-box;
+    margin: 0px 10px 0px 0px;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+    height: auto;
+}
+
+.project-box:hover {
+    background-color: gray;
+}
+
+.project-title {
+    font-weight: bold;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.project-date {
+    color: #b30000;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.project-description {
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
+/* config for time lines sections (Education / Certificates)
+--------------------------------------------------------------------- */
+
+.detail {
+	flex: 1 0 0;
+	background-color: white;
+	padding: 2rem;
+}
+.detail:hover > .detail-section:not(:hover) {
+	opacity: 0.3;
+}
+.detail-section {
+	transition: all 0.3s;
+}
+.detail-section:not(:last-of-type) {
+	padding-bottom: 1rem;
+}
+.detail-title {
+	display: flex;
+	align-items: center;
+}
+.detail-section > .detail-content {
+	padding: 1.5rem;
+	padding-left: 2rem;
+	user-select: none;
+}
+.detail-section.edu > .detail-content {
+	padding-left: calc(1.5rem + 10px);
+}
+.title-icon + span {
+	font-size: 1.5rem;
+	transition: all 0.3s;
+}
+.title-icon {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+	margin-right: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: var(--profile-theme);
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+.title-icon i {
+	color: white;
+	line-height: 1rem;
+	font-size: 1rem;
+	text-align: center;
+}
+.detail-section:hover .title-icon {
+	transform: scale(1.5);
+	margin-right: 1.5rem;
+}
+.detail-section:hover .title-icon + span {
+	letter-spacing: 1.5px;
+}
+
+/* time line block in education section */
+.timeline-block {
+	position: relative;
+	padding-left: 30px;
+}
+.timeline-block:not(:last-of-type) {
+	margin-bottom: 1rem;	
+}
+.timeline-block h1 {
+	font-size: 1rem;
+	margin: 5px 0;
+	transition: all 0.3s;
+}
+.timeline-block p {
+	font-size: 0.8rem;
+	margin: 5px 0;
+}
+.timeline-block time {
+	font-size: 0.8rem;
+	color: var(--color-gray-dark-2);
+}
+.timeline-block::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border: 3px solid var(--timeline-circle-theme);
+	border-radius: 50%;
+	left: -10px;
+	top: -5px;
+}
+.timeline-block::after {
+	position: absolute;
+	content: '';
+	width: 3px;
+	height: 100%;
+	background-color: var(--timeline-circle-theme);
+	left: -1px;
+	top: 13px;
+}
+.timeline-block:hover h1 {
+	color: var(--color-tiffany);
+}
+.timeline-block:hover::before {
+	animation: circle 1.2s infinite;
+}
+
+@keyframes circle {
+  0% {
+    box-shadow: 0 0 0 0px rgba(51, 52, 57, 1);
+  }
+  100% {
+    box-shadow: 0 0 0 6px rgba(51, 52, 57, 0);
+  }
+}
+
+
+/* Contact section
+--------------------------------------------------------------------- */
+
+.contact {
+    float: right;    
+    height: 620px;
+    width: 90%;
+    margin: 15px 100px 15px 15px;
+}
+
+
+.container-narrow {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center !important;
+} 
+  
+h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 1.2;
+}
+  
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y)* -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)/ 2);
+    padding-left: calc(var(--bs-gutter-x)/ 2);      
+}  
+
+.form-label {
+    margin-bottom: .5rem;
+}
+
+.fw-bolder {
+    font-weight: bolder !important;
+}
+
+label {
+    display: inline-block;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #e9ecef;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 10px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+input {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.btn-primary:hover {
+    color: #000;
+    background-color: #f7e576;
+    border-color: #f7e36e;
+}
+
+[type="submit"]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 1.6;
+    color: rgb(33, 37, 41);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: yellow;
+    border: 2px solid transparent;
+    padding: 0.6rem 2.25rem;
+    padding-left: 2.25rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    transition: 0.18s ease-in-out;
+}
+
+.col-sm-2 {
+    flex: 0 0 auto;
+    width: 16.66667%;
+}
+
+.col-sm-10 {
+    flex: 0 0 auto;
+    width: 83.33333%;
+}
+
+.col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.pt-2 {
+    padding-top: 2%;
+}
+
+.pb-1 {
+    padding-bottom: .5rem !important;
+}
+
+.mb-5 {
+    margin-bottom: 4rem !important;
+}
+
+.p-3 {
+    padding: 2rem !important;
+}
+
+.bg-light {
+    background-color: #f4f6f8 !important;
+}
+
+.px-1 {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+ 
+.h5 {
+    font-size: 1.25rem;
+}
+.h5 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-weight: 700;
+    line-height: 1.2;
+}
+    
